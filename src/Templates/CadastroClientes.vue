@@ -206,7 +206,7 @@ export default {
        },
        getClientes(){
         axios
-        .get('https://api-teste-tmf.herokuapp.com/clientes')
+        .get('https://api-cadastrocliente.herokuapp.com/clientes')
         .then(response => {
                this.rows = response.data
                console.log(response.data)
@@ -222,7 +222,7 @@ export default {
                           endereco:this.edtEndereco
                         }
         axios
-          .post('https://api-teste-tmf.herokuapp.com/clientes',objCliente)
+          .post('https://api-cadastrocliente.herokuapp.com/clientes',objCliente)
           .then(response => {
                 this.rows = response.data
                 console.log(response.data)
@@ -234,7 +234,7 @@ export default {
 
        deleteCLientes(id){
         axios
-          .delete('https://api-teste-tmf.herokuapp.com/clientes/'+id)
+          .delete('https://api-cadastrocliente.herokuapp.com/clientes/'+id)
           .then(response => {
                 this.rows = response.data
                 console.log(response.data)
@@ -251,7 +251,7 @@ export default {
                           endereco:this.edtEnderecoModel
                         }
         axios
-          .post('https://api-teste-tmf.herokuapp.com/clientes',objCliente)
+          .post('https://api-cadastrocliente.herokuapp.com/clientes',objCliente)
           .then(response => {
                 this.rows = response.data
                 console.log(response.data)
