@@ -8,7 +8,7 @@
           </q-avatar>
 
           <q-toolbar-title>
-            Cadastro de clientes **
+            Cadastro de clientes
           </q-toolbar-title>
 
           <q-btn flat round dense icon="whatshot" />
